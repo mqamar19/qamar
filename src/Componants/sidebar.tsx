@@ -1,7 +1,8 @@
 'use client'
 // ./src/Componants/sidebar.tsx
 import { useState } from 'react';
-import Image from 'next/image';
+import { FaBars } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   
@@ -14,9 +15,9 @@ function Sidebar() {
 
   return (
     <>
-    <button className="toggle-button" onClick={toggleSidebar}>
-      🍔
-      </button>
+   <button className="toggle-button" onClick={toggleSidebar}>
+  <FaBars />
+</button>
      
     <div className={`sidebar ${isOpen ? 'open' : ''} ${isClose ? 'close' : ''}`}>
       <div className='menu'><ul>
@@ -27,8 +28,8 @@ function Sidebar() {
       
       <div className='dropbutton'>
       <button className="toggle-button clsbutton" onClick={toggleSidebar}>
-    ❌
-      </button>
+  <FaTimes />
+</button>
       </div>
       
     </div>
