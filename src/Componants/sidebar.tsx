@@ -4,10 +4,13 @@ import { useState } from 'react';
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  
+    const [isClose, setIsClose] = useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+    setIsClose(!isClose);
   };
+ 
 
   return (
     <>
@@ -15,13 +18,21 @@ function Sidebar() {
       🍔
       </button>
      
-    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-      
-      <ul>
+    <div className={`sidebar ${isOpen ? 'open' : ''} ${isClose ? 'close' : ''}`}>
+      <div className='menu'><ul>
         <li> <a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
-      </ul>
+      </ul></div>  
+      
+      
+      <div className='dropbutton'>
+      <button className="toggle-button clsbutton" onClick={toggleSidebar}>
+    ❌
+      </button>
+      </div>
+      
     </div>
+
     </>
   );
 }
