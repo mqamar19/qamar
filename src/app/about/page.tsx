@@ -1,7 +1,13 @@
+'use client'
+
+import Sidebar from '@/Componants/sidebar'
 export default function About() {
-    return (
-        <>
-        <h1>About</h1>
-        </>
-    )
-    }
+  return (
+  <>
+  <div>
+    <Sidebar/>
+    <p>This the about page by qamar</p>
+  </div>
+  </>
+  )
+}
