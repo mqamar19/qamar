@@ -6,6 +6,7 @@ export default function Home() {
   <>
   <div>
     <Sidebar/>
+    <h1>Home Qamar</h1>
   </div>
   </>
   )

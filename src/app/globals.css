@@ -40,12 +40,15 @@
     width: 250px;
     background-color: #333;
     color: white;
+
+  }
+  sidebar.close {
     transform: translateX(-100%); /* Slide the sidebar out of view */
     transition: transform 0.3s ease-in-out;
   }
-  
   .sidebar.open {
     transform: translateX(0); /* Slide the sidebar in from the right */
+   
   }
   
   .content {
@@ -69,15 +72,41 @@
 li a:hover {
     color: yellow;
 }
-
+.sidebar {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
 .sidebar.open {
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-bottom: 20px;
+
+  position: absolute;
+  bottom: auto;
+  top: 0;
 }
 .sidebar {
     padding-top: 30px;
     padding-left: 10px;
     padding-bottom: 20px;
 }
-  
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+.sidebar {
+  display: flex;
+}
+.menu {
+  width: 50%;
+}
+.dropbutton {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.clsbutton {
+  padding: 0 10px;
+}
