@@ -2,26 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+
+
+/* styles/globals.css */
+.container {
+    display: flex;
   }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    transform: translateX(-250px); /* Initially hide the sidebar */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Show the sidebar when 'open' class is applied */
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+
+
+  /* styles/globals.css */
+.container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    transform: translateX(-100%); /* Slide the sidebar out of view */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Slide the sidebar in from the right */
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .toggle-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+  li {
+    padding-bottom: 10px;
+}
+li a:hover {
+    color: yellow;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.sidebar.open {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
+.sidebar {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+  
