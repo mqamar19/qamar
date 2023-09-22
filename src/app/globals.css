@@ -12,11 +12,24 @@
   }
   
   .sidebar {
-    width: 250px;
+    width: 30vw;
+    height: 100vh;
     background-color: #333;
     color: white;
-    transform: translateX(-250px); /* Initially hide the sidebar */
-    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100vw);
+    transition: transform 0.8s ease-in-out;
+
+
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 2%;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    background-color: #333;
+    color: white;
   }
   
   .sidebar.open {
@@ -36,12 +49,7 @@
     display: flex;
   }
   
-  .sidebar {
-    width: 250px;
-    background-color: #333;
-    color: white;
-
-  }
+ 
   sidebar.close {
     transform: translateX(-100%); /* Slide the sidebar out of view */
     transition: transform 0.3s ease-in-out;
@@ -72,41 +80,50 @@
 li a:hover {
     color: yellow;
 }
-.sidebar {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 0px;
-}
+
 .sidebar.open {
 
   position: absolute;
   bottom: auto;
   top: 0;
 }
-.sidebar {
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-}
-.sidebar {
-  position: absolute;
-  left: 0;
-  top: 0;
 
-}
 
-.sidebar {
-  display: flex;
-}
+
+
 .menu {
-  width: 50%;
+  width: 90%;
+  padding-top: 70px;
+  padding-left: 10px;
 }
 .dropbutton {
-  width: 50%;
+  width: 10%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
 .clsbutton {
   padding: 0 10px;
+}
+
+
+button.toggle-button.clsbutton {
+    background: white;
+    border-radius: 100%;
+    padding: 10px 10px;
+  
+}
+
+
+li a {
+  font-family: oswald;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.sidebar {
+  background-image: url(/images/minimalistic.jpg);
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
 }

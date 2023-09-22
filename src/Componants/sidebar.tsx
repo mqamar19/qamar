@@ -1,7 +1,7 @@
 'use client'
 // ./src/Componants/sidebar.tsx
 import { useState } from 'react';
-
+import Image from 'next/image';
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   

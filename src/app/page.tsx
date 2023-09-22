@@ -1,6 +1,7 @@
 'use client'
 
 import Sidebar from '@/Componants/sidebar'
+import Image from 'next/image'
 export default function Home() {
   return (
   <>
