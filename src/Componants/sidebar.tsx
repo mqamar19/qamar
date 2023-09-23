@@ -23,9 +23,10 @@ function Sidebar() {
      
   <div className='menusidebarwrapper'>
   <div className={`sidebar ${isOpen ? 'open' : ''} ${isClose ? 'close' : ''}`}>
-      <div className='menu'><ul>
+      <div className='menuq'><ul>
         <li> <a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
+        <li><a href="/testpage">Test Page</a></li>
       </ul></div>  
       
       
