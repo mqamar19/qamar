@@ -37,6 +37,7 @@ body {
   
   .sidebar.open {
     transform: translateX(0); /* Show the sidebar when 'open' class is applied */
+    transition: transform ease 1s;
   }
   
   .content {
@@ -137,5 +138,93 @@ fill: black;
 /*menu setting up on right side*/
 .menubuttonwrapper {
   text-align: right;
+}
+
+.headersection .menu {
+  padding: 0 !important;
+}
+
+
+ul.flex {
+  display: flex;
+  justify-content: center;
+}
+ul.flex li {
+  margin: 0 10px;
+    padding-bottom: 0;
+   
+}
+
+section.flex.headersection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1920px;
+    padding: 10px 20px;
+}
+.hdfirstclm {
+  width: 15%;
+}
+.hdsecondclm {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.hdthirdclm {
+  width: 15%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+menu {
+  width: 100%;
+}
+button.contact_us_button {
+  padding: 12px 25px;
+  background: tomato;
+  color: white;
+}
+
+
+.hdthirdclm .menubuttonwrapper {
+  display: none !important;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////   Laptop     ////////////////////////////*/
+@media only screen and (max-width:1440px) {
+
+}
+/*/////////////////////////////////////////////////////////////////////////////////   Tablet Landscape    ////////////////////////////*/
+@media only screen and (max-width:1280px) {
+
+}
+/*/////////////////////////////////////////////////////////////////////////////////   Tablet     ////////////////////////////*/
+@media only screen and (max-width:1024px) {
+
+}
+/*/////////////////////////////////////////////////////////////////////////////////   Mobile Landscape     ////////////////////////////*/
+@media only screen and (max-width:880px) {
+
+}
+/*/////////////////////////////////////////////////////////////////////////////////   Mobile     ////////////////////////////*/
+@media only screen and (max-width:767px) {
+  .hdthirdclm .menubuttonwrapper {
+    display: block !important;
+  }
+  .menu, button.contact_us_button  {
+    display: none;
+}
+.sidebar {
+  width: 100%;
+}
+.menuq {
+  width: 80%;
+}
+.dropbutton {
+  width: 20%;
+}
+section.flex.headersection {
+
+    padding: 10px 10px;
+}
 }
 /* menu setting up on right side end */
