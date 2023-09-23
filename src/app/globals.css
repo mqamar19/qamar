@@ -7,6 +7,9 @@
 
 
 /* styles/globals.css */
+body {
+  overflow-x: hidden;
+}
 .container {
     display: flex;
   }
@@ -16,7 +19,7 @@
     height: 100vh;
     background-color: #333;
     color: white;
-    transform: translateX(-100vw);
+    transform: translateX(100vw);
     transition: transform 0.8s ease-in-out;
 
 
@@ -25,7 +28,7 @@
     padding-right: 2%;
     padding-bottom: 20px;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     display: flex;
     background-color: #333;
@@ -131,3 +134,8 @@ li a {
 button.toggle-button.clsbutton svg {
 fill: black;
 }
+/*menu setting up on right side*/
+.menubuttonwrapper {
+  text-align: right;
+}
+/* menu setting up on right side end */

@@ -15,11 +15,14 @@ function Sidebar() {
 
   return (
     <>
+    <div className='menubuttonwrapper'>
    <button className="toggle-button" onClick={toggleSidebar}>
   <FaBars />
 </button>
+</div>
      
-    <div className={`sidebar ${isOpen ? 'open' : ''} ${isClose ? 'close' : ''}`}>
+  <div className='menusidebarwrapper'>
+  <div className={`sidebar ${isOpen ? 'open' : ''} ${isClose ? 'close' : ''}`}>
       <div className='menu'><ul>
         <li> <a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
@@ -33,6 +36,7 @@ function Sidebar() {
       </div>
       
     </div>
+  </div>
 
     </>
   );
