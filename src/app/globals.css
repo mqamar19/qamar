@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+typeface
 
 
 
@@ -172,7 +172,7 @@ section.flex.headersection {
 .hdthirdclm {
   width: 15%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 menu {
@@ -180,13 +180,23 @@ menu {
 }
 button.contact_us_button {
   padding: 12px 25px;
-  background: tomato;
+  background: black;
   color: white;
 }
 
-
+button.contact_us_button:hover {
+  background: tomato;
+  color: white;
+}
 .hdthirdclm .menubuttonwrapper {
   display: none !important;
+}
+
+menu a:hover {
+color: tomato;
+}
+.sidebar {
+  display: none;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////   Laptop     ////////////////////////////*/
@@ -209,6 +219,13 @@ button.contact_us_button {
 @media only screen and (max-width:767px) {
   .hdthirdclm .menubuttonwrapper {
     display: block !important;
+  }
+
+  .sidebar.open {
+    display: flex;
+  }
+  .sidebar {
+    display: flex;
   }
   .menu, button.contact_us_button  {
     display: none;
